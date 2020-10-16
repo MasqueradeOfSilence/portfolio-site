@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+  @author Alex Neville, ©July 2020
+-->
+<html lang="en">
+
+  <!-- HEADER -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap from MaxCDN: -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- Icons: -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+     <!-- Ensure adjustable view based on screen size: -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Title: -->
+     <title> Alex Neville - Reel </title>
+     <!-- Set up CSS and favicon -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="belmontFavicon.ico" type="image/x-icon"/>
+     <link rel="apple-touch-icon" href="belmontFavicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+
+    <!-- Header image and contact information -->
+    <center>
+      <div id="headerImageContainer">
+        <img class="img-responsive" id="headerImage" src="header.jpg" alt="Header">
+        <a href="home.html">
+          <img class="img-responsive img-circle" id="profileImage" src="alex.jpg" alt="Alex">
+        </a>
+        <div class="belowProfilePictureContainer">
+          <div id="basicInformationName"> Alex Neville </div>
+          <div class="basicInformationContainer"> Software Engineer </div>
+          <div class="basicInformationContainer"> Technical Artist </div>
+          <div id="basicInformationEmail">
+            <a href="mailto:softwaredev@alexanderneville.com">
+              softwaredev@alexanderneville.com
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <img class="imageButton" src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+              <img class="imageButton" src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <img class="imageButton" src="artstation.svg" alt="ArtStation">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-inverse" id="myNavbar">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav" id="myNavbarUL">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="reel.html">Reel</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="spacer">
+        &nbsp;
+      </div>
+
+    </center>
+
+    <!-- REEL -->
+    <center>
+      <div id="basicTitle">
+        <h1>Videos</h1>
+        <hr>
+        <br>
+      </div>
+    </center>
+
+    <div class="container">
+      <div class="row">
+        <figure class="col-sm-4">
+          <a href="reel/panTurnaround.mov" target="_blank" data-size="1600x1067">
+            <img alt="Pan Turnaround (Looks best in Safari -- currently has issues in Chrome -- click to download)" src="reel/panTurnaround.mov" class="img-thumbnail img-responsive galleryImg" />
+          </a>
+        </figure>
+
+        <figure class="col-sm-4">
+          <a href="reel/ballAndShader.mov" target="_blank" data-size="1600x1067">
+            <img alt="Ball and Shader (Looks best in Safari -- currently has issues in Chrome -- click to download)" src="reel/ballAndShader.mov" class="img-thumbnail img-responsive galleryImg" />
+          </a>
+        </figure>
+
+        <figure class="col-sm-4">
+          <a href="reel/DAND.mov" target="_blank" data-size="1600x1067">
+            <img alt="Death and Delila (Looks best in Safari -- currently has issues in Chrome -- click to download)" src="reel/DAND.mov" class="img-thumbnail img-responsive galleryImg" />
+          </a>
+        </figure>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <hr>
+    <div id="footerDiv">
+
+      <div id="contactList">
+        <ul id="footerUL">
+          <li class="nameFooterLI"><b>Alex Neville</b></li>
+          <li class="footerLI"><a href="mailto:softwaredev@alexanderneville.com">
+            <i class="fa fa-paper-plane-o"></i>
+              softwaredev@alexanderneville.com</a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+            <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <span class="iconify" data-icon="fa-brands:artstation" data-inline="false"></span>
+                ArtStation
+            </a>
+          </li>
+          <li class="footerLI">&#169; 2020</li>
+          <li id="codeLI" class="footerLI"> >> return 0; </li>
+        </ul>
+      </div>
+
+      <!-- Email Form -->
+      <div id="contactFooterDiv">
+        <p id="sendMeAMessage">Email Me</p>
+        <form method="post" action="contact.php" class="emailForm">
+          <div id="leftHalfOfContactForm">
+            <label for="name" class="contactLabel">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="subject" class="contactLabel">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="email" class="contactLabel">Email:</label><br>
+            <input type="text" id="email" name="email">
+          </div>
+
+          <div id="rightHalfOfContactForm">
+            <label for="mathQuestion" class="contactLabel">What is 9 times 5?</label><br>
+            <input type="text" id="mathQuestion" name="mathQuestion">
+            <label for="message" class="contactLabel">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <center><input type="submit" id="sendEmailButton" value="Send Email"></center>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

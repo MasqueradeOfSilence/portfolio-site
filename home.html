@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+  @author Alex Neville, ©July 2020
+-->
+<html lang="en">
+
+  <!-- HEADER -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap from MaxCDN: -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- Icons: -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+     <!-- Ensure adjustable view based on screen size: -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Title: -->
+     <title> Alex Neville - Software Engineer | Technical Artist </title>
+     <!-- Set up CSS and favicon -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="belmontFavicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <!-- Header image and contact information -->
+    <center>
+      <div id="headerImageContainer">
+        <img class="img-responsive" id="headerImage" src="header.jpg" alt="Header">
+        <a href="home.html">
+          <img class="img-responsive img-circle" id="profileImage" src="alex.jpg" alt="Alex">
+        </a>
+        <div class="belowProfilePictureContainer">
+          <div id="basicInformationName"> Alex Neville </div>
+          <div class="basicInformationContainer"> Software Engineer </div>
+          <div class="basicInformationContainer"> Technical Artist </div>
+          <div id="basicInformationEmail">
+            <a href="mailto:softwaredev@alexanderneville.com">
+              softwaredev@alexanderneville.com
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <img class="imageButton" src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+              <img class="imageButton" src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <img class="imageButton" src="artstation.svg" alt="ArtStation">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-inverse" id="myNavbar">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav" id="myNavbarUL">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reel.html">Reel</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="spacer">
+        &nbsp;
+      </div>
+
+    </center>
+
+    <!-- Contains my basic "about me" introduction. -->
+    <div id="basicInformationDiv">
+
+      <!-- My Story -->
+      <div id="introductoryParagraph">
+        <h1>My Story</h1>
+        <hr>
+        <p class="aboutMeParagraph">
+          <b class="boldText">I'm a software engineer.</b>
+          Computer programming, I.T., and digital art are my life. As a result, it was only natural for me to major
+          in Computer Science: Animation Emphasis at Brigham Young University. I had so much fun that I decided to
+          get a master’s degree in it, too. And I am loving it so far.
+        </p>
+        <p class="aboutMeParagraph">
+          <b class="boldText">I began coding</b> while I was an honors/A.P. student at Ventura High School, mostly making mediocre web
+          pages that never saw the light of day. During my senior year, I took a computer applications class
+          and learned basic Excel programming. After that, I never looked back!
+        </p>
+
+        <p class="aboutMeParagraph">
+          <b class="boldText">I have</b> one year of professional software engineering experience in the television industry.
+          I will be starting my Master's degree in Computer Science in August of 2020, focusing on
+          applications of control theory to VFX pipelines.
+        </p>
+      </div>
+
+      <!-- Quick facts -->
+      <div id="fastFactsDiv">
+        <ul id="fastFacts">
+          <center><p id="fastFactsTitle"><b>Fast Facts</b></p></center>
+          <br><br>
+          <center><img src="fastFactsPic.jpg" class="img-rounded img-responsive" id="fastFactsPic" alt="Fast Facts"></center>
+          <br><br>
+          <li class="factElement"><b class="boldText">Name:</b> Alex Neville</li>
+          <li class="factElement"><b class="boldText">Date of Birth:</b> 11 Jul 1993</li>
+          <li class="factElement"><b class="boldText">Location:</b> Orem, UT </li>
+          <li class="factElement"><b class="boldText">Phone:</b> (805) 901-6155</li>
+          <li class="factElement"><b class="boldText">Email:</b>
+            <a href="mailto:softwaredev@alexanderneville.com">
+              softwaredev@alexanderneville.com</li>
+            </a>
+          <li class="factElement"><b class="boldText">Backup Email:</b>
+            <a href="mailto:alexcn711@gmail.com">
+              alexcn711@gmail.com</li>
+            </a>
+          <li class="factElement"><b class="boldText">Hometown:</b> Ventura, CA</li>
+          <li class="factElement"><b class="boldText">MBTI:</b> INFP</li>
+          <li class="factElement"><b class="boldText">Ethnicity:</b> Biracial (Filipino and Caucasian).</li>
+          <li class="factElement"><b class="boldText">Favorite music:</b> heavy metal, hardcore rap, electronica.</li>
+          <li class="factElement"><b class="boldText">Film Credits:</b>
+            <a href="https://vimeo.com/364122139" target="_blank">Death and Delila</a> (VFX and Pipeline).</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- MOST RELEVANT SKILLS -->
+    <div class="container" id="skillContainer">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Computer Graphics
+        </div>
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Adaptive Video Streaming
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Full-Stack Web Development
+        </div>
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Film and Video Game Production
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Mobile Development
+        </div>
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Visual Effects
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Unit Testing
+        </div>
+        <div class="col-sm-4">
+          <img class="checkMark" src="checkGreenSmall.png" alt="CheckMark">
+          Clean Code Principles
+        </div>
+      </div>
+    </div>
+
+    <!-- Less important, but potentially relevant information -->
+    <div id="flavorTextParagraph">
+      <h3>Flavor Text...</h3>
+      <hr class="specialLineBreak">
+      <p class="aboutMeParagraph">
+        <b class="boldText"> > I’m a lifelong theme park enthusiast, and aspiring theme park designer.</b>
+        I love to while away my weekends riding roller coasters and water slides. I have participated in the
+        Cornell Theme Park Design Competition, and was the lead artist on a semifinalist team in the 2020
+        Disney Imaginations Competition. I am also the president of the BYU Theme Park Engineering and Design Club,
+        and a member of the <a href="https://www.teaconnect.org/MemberArea/index.cfm?page=members&subPage=view&membercode=50072&membersection=people&personcode=57847"
+        target="_blank">Themed Entertainment Association: NextGen.</a>
+      </p>
+      <hr class="specialLineBreak">
+
+      <p class="aboutMeParagraph">
+        <b class="boldText"> > I'm a writer. </b>
+        I am currently working on a Y.A. horror novel, Carnivile. In 2020, I had the honor
+        of being accepted into Brandon Sanderson’s limited-enrollment, application-only creative writing
+        course, Writing Science Fiction and Fantasy.
+      </p>
+      <hr class="specialLineBreak">
+
+      <p class="aboutMeParagraph">
+        <b class="boldText"> > Math is power.</b>
+        I minored in math while at BYU. It was a blast, and also I got to learn MATLAB while
+        taking differential equations. Win-win.
+      </p>
+      <hr class="specialLineBreak">
+
+      <p class="aboutMeParagraph">
+        <b class="boldText"> > My other interests include</b> distance running, reading, hiking, strength
+        training, swimming, gaming (Switch and PC), cartoons, Legos, anime, dinosaurs,
+        stargazing, geyser gazing, & playing and creating music: the works.
+      </p>
+      <hr class="specialLineBreak">
+
+      <p class="aboutMeParagraph">
+        <center>
+          <a href="https://www.teaconnect.org/MemberArea/index.cfm?page=members&subPage=view&membercode=50072&membersection=people&personcode=57847"
+          target="_blank"><img src="TEA_Membership.jpg" alt="TEA NextGen Membership" class="img-responsive"
+          id="TEA"></img></a>
+        </center>
+      </p>
+      <hr class="specialLineBreak">
+
+    </div>
+
+    <!-- FOOTER -->
+    <hr>
+    <div id="footerDiv">
+
+      <div id="contactList">
+        <ul id="footerUL">
+          <li class="nameFooterLI"><b>Alex Neville</b></li>
+          <li class="footerLI"><a href="mailto:softwaredev@alexanderneville.com">
+            <i class="fa fa-paper-plane-o"></i>
+              softwaredev@alexanderneville.com</a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+            <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <span class="iconify" data-icon="fa-brands:artstation" data-inline="false"></span>
+                ArtStation
+            </a>
+          </li>
+          <li class="footerLI">&#169; 2020</li>
+          <li id="codeLI" class="footerLI"> >> return 0; </li>
+        </ul>
+      </div>
+
+      <!-- Email Form -->
+      <div id="contactFooterDiv">
+        <p id="sendMeAMessage">Email Me</p>
+        <form method="post" action="contact.php" class="emailForm">
+          <div id="leftHalfOfContactForm">
+            <label for="name" class="contactLabel">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="subject" class="contactLabel">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="email" class="contactLabel">Email:</label><br>
+            <input type="text" id="email" name="email">
+          </div>
+
+          <div id="rightHalfOfContactForm">
+            <label for="mathQuestion" class="contactLabel">What is 9 times 5?</label><br>
+            <input type="text" id="mathQuestion" name="mathQuestion">
+            <label for="message" class="contactLabel">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <center><input type="submit" id="sendEmailButton" value="Send Email"></center>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

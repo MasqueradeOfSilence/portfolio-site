@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+  @author Alex Neville, ©July 2020
+-->
+<html lang="en">
+
+  <!-- HEADER -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap from MaxCDN: -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- Icons: -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+     <!-- Ensure adjustable view based on screen size: -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Title: -->
+     <title> Alex Neville - Contact </title>
+     <!-- Set up CSS and favicon -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="belmontFavicon.ico" type="image/x-icon"/>
+     <!-- Using OpenLayers because only chumps pay for Google Maps -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.0/css/ol.css" type="text/css">
+     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.0/build/ol.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Header image and contact information -->
+    <center>
+      <div id="headerImageContainer">
+        <img class="img-responsive" id="headerImage" src="header.jpg" alt="Header">
+        <a href="home.html">
+          <img class="img-responsive img-circle" id="profileImage" src="alex.jpg" alt="Alex">
+        </a>
+        <div class="belowProfilePictureContainer">
+          <div id="basicInformationName"> Alex Neville </div>
+          <div class="basicInformationContainer"> Software Engineer </div>
+          <div class="basicInformationContainer"> Technical Artist </div>
+          <div id="basicInformationEmail">
+            <a href="mailto:softwaredev@alexanderneville.com">
+              softwaredev@alexanderneville.com
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <img class="imageButton" src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+              <img class="imageButton" src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <img class="imageButton" src="artstation.svg" alt="ArtStation">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-inverse" id="myNavbar">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav" id="myNavbarUL">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reel.html">Reel</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="spacer">
+        &nbsp;
+      </div>
+
+    </center>
+
+    <!-- CONTACT INFORMATION -->
+    <center>
+      <div id="basicTitle">
+        <h1>Contact Me</h1>
+        <hr>
+        <br>
+      </div>
+    </center>
+
+    <p class="contactParagraph">
+      <b class="boldText">I am currently located in Orem, Utah. </b>
+      After finishing my master's program, I am planning on relocating to either Los Angeles,
+      California, or Orlando, Florida. While I enjoy living in the Utah area, I don't like the
+      snow, and long-term I would like to be closer to the theme park industry.
+    </p>
+
+    <p class="contactParagraph">
+      <b class="boldText">My <em>very</em> informal theme park blog </b>
+      can be found <a href="https://amusementandairtime.com" target="_blank">here</a>.
+    </p>
+
+    <p class="contactParagraph">
+      <b class="boldText">The old version of my portfolio website </b>
+      can be found <a href="http://ec2-54-218-44-216.us-west-2.compute.amazonaws.com/homepage.html" target="_blank">here</a>.
+    </p>
+
+    <br>
+
+    <center>
+      <p class="linksParagraph">
+        <a href="mailto:softwaredev@alexanderneville.com">
+          <i class="fa fa-paper-plane-o"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/alex.neville.35" target="_blank">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/masqueradeofsilence/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/imminentthunder" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </p>
+      <p class="linksParagraph">
+        <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+          <span class="iconify" data-icon="fa-brands:artstation" data-inline="false"></span>
+        </a>
+        <a href="https://www.hackerrank.com/alexcn711" target="_blank">
+          <span class="iconify" data-icon="fa-brands:hackerrank" data-inline="false"></span>
+        </a>
+        <a href="https://www.codewars.com/users/alexcn711" target="_blank">
+          <span class="iconify" data-icon="simple-icons:codewars" data-inline="false"></span>
+        </a>
+      </p>
+    </center>
+
+    <br>
+
+    <center>
+      <div id="map" class="map"></div>
+    </center>
+    <script type="text/javascript">
+      var map = new ol.Map(
+      {
+        target: 'map',
+        layers: [
+          new ol.layer.Tile(
+          {
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View(
+        {
+          center: ol.proj.fromLonLat([-111.72386881557499, 40.297784886791455]),
+          zoom: 13
+        })
+      });
+
+    </script>
+
+    <br><br>
+
+    <!-- FOOTER -->
+    <hr>
+    <div id="footerDiv">
+
+      <div id="contactList">
+        <ul id="footerUL">
+          <li class="nameFooterLI"><b>Alex Neville</b></li>
+          <li class="footerLI"><a href="mailto:softwaredev@alexanderneville.com">
+            <i class="fa fa-paper-plane-o"></i>
+              softwaredev@alexanderneville.com</a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.linkedin.com/in/alexander-neville-52543a49/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://github.com/MasqueradeOfSilence" target="_blank">
+            <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.artstation.com/masqueradeofsilence" target="_blank">
+              <span class="iconify" data-icon="fa-brands:artstation" data-inline="false"></span>
+                ArtStation
+            </a>
+          </li>
+          <li class="footerLI">&#169; 2020</li>
+          <li id="codeLI" class="footerLI"> >> return 0; </li>
+        </ul>
+      </div>
+
+      <!-- Email Form -->
+      <div id="contactFooterDiv">
+        <p id="sendMeAMessage">Email Me</p>
+        <form method="post" action="contact.php" class="emailForm">
+          <div id="leftHalfOfContactForm">
+            <label for="name" class="contactLabel">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="subject" class="contactLabel">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="email" class="contactLabel">Email:</label><br>
+            <input type="text" id="email" name="email">
+          </div>
+
+          <div id="rightHalfOfContactForm">
+            <label for="mathQuestion" class="contactLabel">What is 9 times 5?</label><br>
+            <input type="text" id="mathQuestion" name="mathQuestion">
+            <label for="message" class="contactLabel">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <center><input type="submit" id="sendEmailButton" value="Send Email"></center>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

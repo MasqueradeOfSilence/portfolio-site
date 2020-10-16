@@ -1,0 +1,455 @@
+/*
+  Styling HTML elements
+*/
+
+body
+{
+  background-color: #000a17;
+  padding-bottom: 5%;
+}
+
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+input, textarea
+{
+  width: 250px;
+}
+
+textarea
+{
+  height: 45px;
+}
+
+figcaption
+{
+  color: #F6F6FF;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*
+  For mobile screens
+*/
+@media only screen and (max-width: 479px)
+{
+  input, textarea
+  {
+    width: 180px;
+  }
+
+  #fastFacts, #map, figcaption, iframe
+  {
+    display: none;
+  }
+}
+
+/*
+  Styling HTML classes
+*/
+
+.img-responsive
+{
+  display: flex;
+}
+
+.pdfDownloadLink
+{
+  font-size: 150px;
+}
+
+.menuList
+{
+  list-style-type: none;
+  margin: 5%;
+  padding: 0;
+}
+
+.menuListElement
+{
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1.25%;
+  padding-bottom: 1.25%;
+  font-size: 18px;
+}
+
+.menuListElement:hover
+{
+  background-color: #4CAF50;
+  color: #F6F6FF;
+}
+
+.contactLabel
+{
+  color: #9fbfdf;
+}
+
+.menuDiv
+{
+  width: 35px;
+  height: 5px;
+  background-color: blue;
+  margin: 6px 0;
+}
+
+.footerLI
+{
+  text-indent: 5px;
+}
+
+.nameFooterLI
+{
+  padding-bottom: 5px;
+}
+
+.factElement
+{
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
+
+.specialLineBreak
+{
+  height: 1px;
+  background-color: #9fbfdf;
+  border: none;
+}
+
+.col-sm-4
+{
+  font-size: 17px;
+  color: #9fbfdf;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.aboutMeParagraph
+{
+  margin-left: 40px;
+}
+
+.contactParagraph
+{
+  color: #F6F6FF;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.skillParagraph
+{
+  border-radius: 10px;
+  padding: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background: darkgray;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.classElement
+{
+  color: #F6F6FF;
+  margin-left: 16%;
+  margin-right: 15%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.linksParagraph
+{
+  color: #F6F6FF;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 40px;
+}
+
+.individualSkillDiv
+{
+  display: block;
+}
+
+.titleDiv
+{
+  float: left;
+}
+
+.boldText
+{
+  color: #9fbfdf;
+}
+
+.boldSkillsText
+{
+  color: #9fbfdf;
+  font-size: 18px;
+}
+
+.indentedDiv
+{
+  margin-left: 25%;
+}
+
+.menuLink
+{
+  color: #F6F6FF;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 60px;
+}
+
+.imageButton
+{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40%;
+  width: 3.5vw;
+}
+
+.basicInformationContainer
+{
+  position: relative;
+  color: #F6F6FF;
+  font-size: 18px;
+  font-size: 1.8vw;
+}
+
+.belowProfilePictureContainer
+{
+  margin-top: -20%;
+  display: block;
+}
+
+.galleryImg
+{
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+}
+
+/*
+  Styling HTML IDs
+*/
+
+#TEA
+{
+  transform: scale(0.5);
+  margin-top: -10%;
+  margin-bottom: -10%;
+}
+
+#myNavbar
+{
+  background-color: #000a17;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+#myNavbarUL > li
+{
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+#myNavbarUL > li:hover
+{
+  background-color: #4CAF50;
+}
+
+#myNavbarUL > li.active a
+{
+  background-color: #4CAF50;
+}
+
+#profileImage
+{
+  margin-top: -81vw;
+  position: absolute;
+  transform: scale(0.2);
+  box-shadow: 5px 5px 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+#headerImageContainer
+{
+  position: relative;
+  display: block;
+}
+
+#basicInformationName
+{
+  position: relative;
+  color: lightgray;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+#basicInformationEmail
+{
+  position: relative;
+  color: #F6F6FF;
+  font-size: 1.5vw;
+}
+
+#introductoryParagraph
+{
+  color: #F6F6FF;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#flavorTextParagraph
+{
+  color: #F6F6FF;
+  font-size: 18px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  text-align: justify;
+}
+
+#skillContainer
+{
+  margin-left: 25%;
+}
+
+#skillsDiv
+{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#fastFactsTitle
+{
+  color: yellow;
+  font-size: 25px;
+  margin-right: 10%;
+}
+
+#fastFacts
+{
+  list-style-type: none;
+  border: solid;
+  color: #4287f5;
+  border-color: blue;
+  font-size: 16px;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: -10%;
+}
+
+#contactFooterDiv
+{
+  float: right;
+  padding-right: 5%;
+  transform: scale(0.95) translateY(-10px);
+}
+
+#footerDiv
+{
+  display: block;
+}
+
+#contactList
+{
+  float: left;
+}
+
+#sendEmailButton
+{
+  color: #7AD7F0;
+  background-color: black;
+  border-radius: 10%;
+  border-color: blue;
+}
+
+#sendMeAMessage
+{
+  color: #7AD7F0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#fastFactsDiv
+{
+  transform: scale(0.9);
+}
+
+#fastFactsPic
+{
+  transform: scale(0.5);
+  margin: -35%;
+  margin-left: -45%;
+}
+
+#basicInformationDiv
+{
+  display: flex;
+}
+
+#footerUL
+{
+  list-style-type: none;
+  color: #9fbfdf;
+  font-size: 16px;
+}
+
+#codeLI
+{
+  font-family: courier;
+  color: #F6F6FF;
+  padding-top: 10px;
+}
+
+#emailIcon
+{
+  color: #9fbfdf;
+}
+
+#leftHalfOfContactForm
+{
+  float: left;
+  width: 45%;
+}
+
+#rightHalfOfContactForm
+{
+  float: right;
+  width: 45%;
+}
+
+#basicTitle
+{
+  color: #F6F6FF;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#resumeIFrame
+{
+  border: solid;
+  border-color: #9fbfdf;
+  border-style: outset;
+  border-width: thick;
+}
+
+#map
+{
+  height: 400px;
+  width: 40%;
+  border: solid;
+  border-color: #F6F6FF;
+  border-style: outset;
+  border-width: thick;
+}
