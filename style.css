@@ -226,8 +226,9 @@ figcaption
 
 .belowProfilePictureContainer
 {
-  margin-top: -20%;
+  margin-top: -167%;
   display: block;
+  transform: scale(0.8);
 }
 
 .galleryImg
@@ -252,7 +253,7 @@ figcaption
 {
   background-color: #000a17;
   font-size: 20px;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 #myNavbarUL > li
@@ -273,9 +274,9 @@ figcaption
 
 #profileImage
 {
-  margin-top: -81vw;
-  position: absolute;
-  transform: scale(0.2);
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -130%) scale(0.2);
   box-shadow: 5px 5px 10px 35px rgba(0, 0, 0, 0.25);
 }
 
@@ -388,7 +389,7 @@ figcaption
 
 #fastFactsPic
 {
-  transform: scale(0.5);
+  transform: scale(0.45);
   margin: -35%;
   margin-left: -45%;
 }
