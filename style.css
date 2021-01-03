@@ -29,6 +29,7 @@ figcaption
   color: #F6F6FF;
   font-size: 20px;
   text-align: center;
+  margin-left: -120px;
 }
 
 /*
@@ -238,9 +239,37 @@ figcaption
   object-fit: cover;
 }
 
+.profileDiv
+{
+  width: 40%;
+  height: 40%;
+  margin-top: -50%;
+}
+
+.profileImage
+{
+  /* display: block; */
+  /* width: 100%; */
+  /* margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -130%) scale(0.2); */
+  transform: scale(0.4);
+  box-shadow: 5px 5px 10px 35px rgba(0, 0, 0, 0.25);
+}
+
 /*
   Styling HTML IDs
 */
+
+#ringzer0
+{
+  padding-bottom: 20px;
+}
+
+#basicInfo
+{
+  margin-top: -25%;
+}
 
 #TEA
 {

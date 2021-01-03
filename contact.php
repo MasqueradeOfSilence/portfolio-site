@@ -29,4 +29,16 @@
       exit;
     }
   }
-?>
+  else
+  {
+    echo '<script type="text/JavaScript">
+      window.alert("Email failed: Please fill out all boxes.");
+      </script>';
+
+    echo '<script type="text/JavaScript">
+      window.location = document.referrer;
+      </script>';
+
+    exit;
+  }
+ ?>
